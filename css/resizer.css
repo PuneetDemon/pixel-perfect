@@ -529,46 +529,52 @@ input[type="range"]::-moz-range-thumb {
 
 /* SEO Footer */
 .seo-footer {
-  margin-top: 48px;
-  border-top: 1px solid var(--border);
-  padding: 32px 0 48px;
+  margin-top: 56px;
+  border-top: 1px solid rgba(255,255,255,0.05);
+  padding: 24px 0 40px;
 }
 .seo-footer-inner {
-  max-width: 720px;
+  max-width: 600px;
   margin: 0 auto;
   padding: 0 20px;
+  text-align: center;
 }
 .seo-footer h2 {
   font-family: var(--font-body);
-  font-size: 15px;
-  font-weight: 600;
+  font-size: 11px;
+  font-weight: 500;
   color: var(--text-dim);
-  margin-bottom: 10px;
-  letter-spacing: 0.3px;
+  opacity: 0.4;
+  margin-bottom: 8px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
 }
 .seo-footer p {
-  font-size: 13px;
+  font-size: 11px;
   color: var(--text-dim);
-  line-height: 1.7;
+  opacity: 0.35;
+  line-height: 1.8;
   margin-bottom: 12px;
 }
 .seo-footer strong {
-  color: var(--text);
+  color: var(--text-dim);
+  font-weight: 500;
 }
 .seo-footer ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 6px 16px;
+  justify-content: center;
+  gap: 4px 12px;
 }
 .seo-footer ul li {
-  font-size: 12px;
+  font-size: 10px;
   color: var(--text-dim);
-  opacity: 0.7;
+  opacity: 0.25;
+  letter-spacing: 0.2px;
 }
 .seo-footer ul li::before {
   content: '·';
-  margin-right: 5px;
-  color: var(--accent);
-  opacity: 0.6;
+  margin-right: 4px;
+  opacity: 0.5;
 }
