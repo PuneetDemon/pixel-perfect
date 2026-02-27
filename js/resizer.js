@@ -663,3 +663,23 @@
     setStatus('');
   });
 })();
+
+// Visit counter
+(function () {
+  // Increment count on every page load
+  fetch('/api/count', { method: 'POST' }).catch(() => {});
+
+  // Show stats overlay only when ?stats is in the URL
+  if (location.search.includes('stats')) {
+    const overlay = document.getElementById('statsOverlay');
+    overlay.classList.add('visible');
+    fetch('/api/count')
+      .then(r => r.json())
+      .then(data => {
+        document.getElementById('statsCount').textContent = data.count.toLocaleString();
+      })
+      .catch(() => {
+        document.getElementById('statsCount').textContent = 'Unavailable';
+      });
+  }
+})();
