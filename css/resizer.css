@@ -544,7 +544,7 @@ input[type="range"]::-moz-range-thumb {
   font-size: 11px;
   font-weight: 500;
   color: var(--text-dim);
-  opacity: 0.4;
+  opacity: 0.6;
   margin-bottom: 8px;
   letter-spacing: 0.6px;
   text-transform: uppercase;
@@ -552,7 +552,7 @@ input[type="range"]::-moz-range-thumb {
 .seo-footer p {
   font-size: 11px;
   color: var(--text-dim);
-  opacity: 0.35;
+  opacity: 0.55;
   line-height: 1.8;
   margin-bottom: 12px;
 }
@@ -570,7 +570,7 @@ input[type="range"]::-moz-range-thumb {
 .seo-footer ul li {
   font-size: 10px;
   color: var(--text-dim);
-  opacity: 0.25;
+  opacity: 0.45;
   letter-spacing: 0.2px;
 }
 .seo-footer ul li::before {
